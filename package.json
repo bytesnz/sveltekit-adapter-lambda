@@ -43,8 +43,10 @@
     "@rollup/plugin-node-resolve": "^15.0.1",
     "rollup": "^3.7.5"
   },
-  "peerDependencies": {
-    "@h4ad/serverless-adapter": "^4.3.0",
+  "dependencies": {
     "@sveltejs/kit": "^2.5.28"
+  },
+  "peerDependencies": {
+    "@h4ad/serverless-adapter": "^4.3.0"
   }
 }
