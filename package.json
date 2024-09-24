@@ -24,6 +24,7 @@
   "scripts": {
     "dev": "rimraf files && rollup -cw",
     "build": "rimraf files && rollup -c",
+    "install": "npx rollup -c",
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
