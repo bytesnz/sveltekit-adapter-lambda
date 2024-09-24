@@ -10,5 +10,5 @@ const app = polka().use(internalHandler);
 export const handler = ServerlessAdapter.new(app)
   .setFramework(new PolkaFramework())
   .setHandler(new AwsStreamHandler({ callbackWaitsForEmptyEventLoop: false }))
-  .setAdapter(new ApiGatewayV2Adapter())
+  .addAdapter(new ApiGatewayV2Adapter())
   .build();
